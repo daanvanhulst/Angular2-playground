@@ -21,8 +21,8 @@ export class HeroListComponent implements OnInit{
 
     }
 
-    ngOnInit():Promise<Hero> {
-        return this._getHeroes().then(heroes => this.heroes = heroes);
+    ngOnInit() {
+        this._getHeroes().then(heroes => this.heroes = heroes);
     }
 
     private _getHeroes() {

@@ -1,0 +1,5 @@
+<div *ngIf="selectedHero">
+    <hero-detail [hero]="selectedHero"></hero-detail>
+</div>
+<h2>My Heroes</h2>
+<hero-list (onSelectHero)="selectHero($event)"></hero-list>
